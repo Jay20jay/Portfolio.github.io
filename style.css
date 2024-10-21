@@ -1,0 +1,157 @@
+
+
+
+nav li a{text-decoration: none;
+color: #ddd8ce;
+font-size: larger;
+}
+
+nav ul{list-style: none;
+  justify-content: space-around;
+  display: flex;
+  
+}
+
+nav li{display: inline;}
+
+
+a:hover{text-decoration: underline;}
+
+a{text-decoration: none;
+  color:darkgrey;}
+
+
+
+.box1 h1{color:#ddd8ce ;}
+
+.box1{grid-area: hd;
+background-color: #222222;}
+
+.box2{grid-area: nav;
+background-color: #222222;
+}
+
+.box3{grid-area: main;
+  padding: 5em; 
+}
+
+.box4{grid-area: aside;
+padding: 6em;}
+  
+.box5{grid-area: content1;
+  padding: 6em;
+}
+
+.box6{grid-area: content2;
+  padding: 6em;
+}
+
+.box7{grid-area: content3;
+  padding: 6em;
+ }
+ 
+.box8{grid-area: ft;
+padding: 6em;
+}
+
+button{background-color: #ddd8ce;
+font-size: 15px;
+border: none;
+border-radius: 15%;
+cursor: pointer;}
+
+
+
+.wrapper{
+ display:grid;
+ grid-template-columns:repeat(3, 1fr);
+ grid-template-areas: 
+ "hd nav nav" 
+  "aside main main" 
+  "content1 content2 content3" 
+  "ft ft ft ";
+ font-family:"Nunito", sans-serif;
+ font-weight: normal;
+ color: black;
+ text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.wrapper{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "hd"
+  "nav"
+  "main"
+  "aside"
+  "content1"
+  "content2"
+  "content3"
+  "ft" ;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .wrapper{
+    display:grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "hd"
+  "nav"
+  "main"
+  "aside"
+  "content1"
+  "content2"
+  "content3"
+  "ft" ;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .wrapper{
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-areas:
+  "hd"
+  "nav"
+  "main"
+  "aside"
+  "content1"
+  "content2"
+  "content3"
+  "ft" ;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .wrapper{
+   display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-template-areas: 
+  "hd nav nav" 
+   "aside main main" 
+   "content1 content2 content3" 
+   "ft ft ft ";
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .wrapper{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-template-areas: 
+  "hd nav nav" 
+   "aside main main" 
+   "content1 content2 content3" 
+   "ft ft ft ";
+  }
+}
+
+
